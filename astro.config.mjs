@@ -5,5 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://louisdeconinck.github.io',
+  base: '/findajourney',
   integrations: [tailwind()]
 });
