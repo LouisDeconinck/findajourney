@@ -1,15 +1,113 @@
 ---
+import PageLayout from "../layouts/PageLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("blog");
+const firstThreeEntries = allPosts.slice(0, 3);
+const pageTitle = "Find your next journey!";
+const pageDescription = "Your heart is your guide ❤️";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PageLayout pageTitle={pageTitle}>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="text-center">
+      <h2
+        class="text-5xl tracking-tight font-extrabold text-slate-800 sm:text-6xl pt-12 pb-4"
+      >
+        {pageTitle}
+      </h2>
+      <p class="max-w-2xl mx-auto text-xl text-gray-500 pb-4">
+        {pageDescription}
+      </p>
+      <div class="space-x-4 block pb-6">
+        <a
+          href="/journeys"
+          class="inline-block text-white py-4 px-8 border border-transparent rounded-md text-lg font-bold bg-teal-600 hover:text-teal-50"
+        >
+          Journeys
+        </a>
+        <a
+          href="https://www.instagram.com/findajourney/"
+          target="_blank"
+          class="inline-block text-white py-4 px-8 border border-transparent rounded-md text-lg font-bold bg-teal-600 hover:text-teal-50"
+        >
+          Instagram
+        </a>
+      </div>
+      <img
+        src="/images/find-a-journey-hero.jpg"
+        alt="Maryse and Louis from Find a Journey with huskies"
+        class="rounded-md shadow-lg"
+      />
+    </div>
+
+    <div class="bg-teal-800 my-5 rounded-md mt-10">
+      <div
+        class="max-w-7xl mx-auto py-6 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-10"
+      >
+        <div class="max-w-4xl mx-auto text-center"></div>
+        <dl
+          class="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8"
+        >
+          <div class="flex flex-col">
+            <dt
+              class="order-2 mt-2 text-lg leading-6 font-medium text-teal-200"
+            >
+              Followers
+            </dt>
+            <dd class="order-1 text-5xl font-extrabold text-white">4k</dd>
+          </div>
+          <div class="flex flex-col mt-10 sm:mt-0">
+            <dt
+              class="order-2 mt-2 text-lg leading-6 font-medium text-teal-200"
+            >
+              Likes / post
+            </dt>
+            <dd class="order-1 text-5xl font-extrabold text-white">350</dd>
+          </div>
+          <div class="flex flex-col mt-10 sm:mt-0">
+            <dt
+              class="order-2 mt-2 text-lg leading-6 font-medium text-teal-200"
+            >
+              Engagement rate
+            </dt>
+            <dd class="order-1 text-5xl font-extrabold text-white">8%</dd>
+          </div>
+        </dl>
+        <div class="mx-auto text-center mt-8">
+          <a
+            href="/work-with-us"
+            class="bg-white py-2 px-12 border border-transparent rounded-md text-base font-medium text-teal-600 hover:bg-teal-50"
+          >
+            Work with us
+          </a>
+        </div>
+      </div>
+    </div>
+    <h2
+      class="text-3xl tracking-tight font-extrabold text-slate-800 sm:text-4xl pt-8"
+    >
+      Latest posts
+    </h2>
+    <div
+      class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
+    >
+      {
+        firstThreeEntries.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            author={post.data.author.name}
+            authorImg={post.data.author.image}
+            date={post.data.pubDate}
+            url={post.slug}
+            category={post.data.category.name}
+            categorySlug={post.data.category.slug}
+            imageUrl={post.data.image.url}
+            imageAlt={post.data.image.alt}
+          />
+        ))
+      }
+    </div>
+  </div>
+</PageLayout>

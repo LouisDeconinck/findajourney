@@ -1,0 +1,53 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+
+import { getCollection } from "astro:content";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("journeys");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+// 2. When it's time to render, you can get the entry directly from the prop
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const allPosts = await getCollection("blog", ({ data }) => {
+  return data.category.name === "Slovenia 2022";
+});
+---
+
+<PageLayout>
+  <article
+    class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-slate prose-lg lg:prose-xl prose-img:rounded-md prose-img:shadow-lg"
+  >
+    <h1 class="text-center">
+      {entry.data.title}
+    </h1>
+    <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
+    <Content />
+  </article>
+  <div
+    class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
+  >
+    {
+      allPosts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          author={post.data.author.name}
+          authorImg={post.data.author.image}
+          date={post.data.pubDate}
+          url={post.slug}
+          category={post.data.category.name}
+          categorySlug={post.data.category.slug}
+          imageUrl={post.data.image.url}
+          imageAlt={post.data.image.alt}
+        />
+      ))
+    }
+  </div>
+</PageLayout>

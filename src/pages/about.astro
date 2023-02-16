@@ -1,0 +1,64 @@
+---
+import PageLayout2 from "../layouts/PageLayout2.astro";
+const pageTitle = "About Find a Journey";
+const pageDescription =
+  "The people behind the nice pictures and the travel tips.";
+---
+
+<PageLayout2 pageTitle={pageTitle}>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="text-center">
+      <h2
+        class="text-5xl tracking-tight font-extrabold text-slate-800 sm:text-6xl pt-12 pb-4"
+      >
+        {pageTitle}
+      </h2>
+      <p class="max-w-5xl mx-auto text-2xl text-gray-500 pb-4">
+        {pageDescription}
+      </p>
+    </div>
+    <img
+      src="/images/find-a-journey-hero.jpg"
+      alt="Maryse and Louis from Find a Journey with huskies"
+      class="rounded-md shadow-lg mb-6"
+    />
+    <div class="space-y-5 text-lg lg:text-xl mb-24">
+      <p>
+        We are Maryse and Louis, two travel lovers who have been exploring the
+        world togheter as a couple. We are a team of passionate travelers who
+        have a love for adventure, exploration, and discovering new cultures.
+        Our goal is to inspire and help fellow travelers plan their next trip,
+        whether it's a weekend getaway or an extended journey across the globe.
+      </p>
+
+      <p>
+        On our blog, you'll find a variety of travel content, including
+        destination guides, hotel reviews, travel tips, and personal travel
+        stories. We believe that every destination has its unique charm, and we
+        aim to capture that essence in our posts, providing our readers with
+        valuable insights and information.
+      </p>
+
+      <p>
+        We believe that travel is not just about sightseeing; it's about
+        immersing yourself in different cultures, meeting new people, and
+        creating unforgettable memories. That's why we strive to provide our
+        readers with a comprehensive and authentic travel experience.
+      </p>
+
+      <p>
+        We also believe in responsible travel and strive to make a positive
+        impact on the destinations we visit. We encourage our readers to travel
+        responsibly, respect local cultures, and support sustainable tourism
+        initiatives.
+      </p>
+
+      <p>
+        Whether you're a seasoned traveler or a novice explorer, we hope that
+        our travel blog inspires you to pack your bags and embark on your next
+        adventure. Join us as we journey across the globe, one destination at a
+        time.
+      </p>
+    </div>
+  </div>
+</PageLayout2>

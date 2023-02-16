@@ -1,0 +1,74 @@
+---
+import Header from "../components/Header.astro";
+
+import { getCollection } from "astro:content";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+// 2. When it's time to render, you can get the entry directly from the prop
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>"
+    />
+    <link href={`https://site.com/${entry.data.slug}`} rel="canonical" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={entry.data.description} />
+    <title>{entry.data.title}</title>
+  </head>
+  <body>
+    <Header />
+    <article
+      class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-slate prose-lg lg:prose-xl prose-img:rounded-md prose-img:shadow-lg"
+    >
+      <p class="text-center !my-0">
+        Written by <img
+          class="inline h-10 w-10 !rounded-full"
+          src={`${entry.data.author.image}`}
+          alt={`${entry.data.author.name}`}
+        />
+        <span class="font-medium text-teal-800">{entry.data.author.name}</span> on
+        <span class="font-medium text-teal-800"
+          ><time datetime={`${entry.data.pubDate}`}>{formattedDate}</time></span
+        >
+      </p>
+      <h1 class="text-center">
+        {entry.data.title}
+      </h1>
+      <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
+      <p class="font-medium py-5">
+        Read more stories of this trip: <a
+          href={`/journeys/${entry.data.category.slug}`}
+          class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
+          >{entry.data.category.name}</a
+        >
+      </p>
+      <Content />
+      <p class="font-medium py-5">
+        Read more stories of this trip: <a
+          href={`/journeys/${entry.data.category.slug}`}
+          class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
+          >{entry.data.category.name}</a
+        >
+      </p>
+    </article>
+  </body>
+</html>
