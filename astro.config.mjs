@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://stellar-fox-31c85d.netlify.app/',
+  site: 'https://louisdeconinck.github.io',
   base: '/findajourney',
   integrations: [tailwind()]
 });
