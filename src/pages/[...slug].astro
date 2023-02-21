@@ -56,7 +56,7 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
       <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
       <p class="font-medium py-5">
         Read more stories of this trip: <a
-          href={`/journeys/${entry.data.category.slug}`}
+          href={`/findajourney/journeys/${entry.data.category.slug}`}
           class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
           >{entry.data.category.name}</a
         >
@@ -64,7 +64,7 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
       <Content />
       <p class="font-medium py-5">
         Read more stories of this trip: <a
-          href={`/journeys/${entry.data.category.slug}`}
+          href={`/findajourney/journeys/${entry.data.category.slug}`}
           class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
           >{entry.data.category.name}</a
         >
