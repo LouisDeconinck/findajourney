@@ -4,10 +4,10 @@ pubDate: 2023-02-15
 description: Experience the breathtaking beauty and unique cultural experiences of Slovenia.
 author: 
     name: Maryse
-    image: https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/330795302_925591521951448_8517004357677237982_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-Na7qtcpP6QAX_7Px1i&_nc_ht=scontent-bru2-1.xx&oh=00_AfAn2QMp6pHVpUFj4tcH79gegIIuvQCmjkU_ed-HtVlggQ&oe=63F1022B
+    image: /findajourney/images/maryse-lejoly.jpg
 image:
-    url: /images/2022-slovenia/ljubljana-dragon.jpg
-    alt: The Astro logo with the word One.
+  url: /findajourney/images/2022-slovenia/lake-bled-island-church.jpg
+  alt: Lake Bled island with a church
 category: 
   name: Slovenia 2022
   slug: slovenia-2022

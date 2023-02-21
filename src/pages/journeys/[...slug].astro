@@ -18,12 +18,29 @@ const { Content } = await entry.render();
 const allPosts = await getCollection("blog", ({ data }) => {
   return data.category.name === "Slovenia 2022";
 });
+
+const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
 <PageLayout>
   <article
     class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-slate prose-lg lg:prose-xl prose-img:rounded-md prose-img:shadow-lg"
   >
+    <p class="text-center !my-0">
+      Written by <img
+        class="inline h-10 w-10 !rounded-full"
+        src={`${entry.data.author.image}`}
+        alt={`${entry.data.author.name}`}
+      />
+      <span class="font-medium text-teal-800">{entry.data.author.name}</span> on
+      <span class="font-medium text-teal-800"
+        ><time datetime={`${entry.data.pubDate}`}>{formattedDate}</time></span
+      >
+    </p>
     <h1 class="text-center">
       {entry.data.title}
     </h1>
