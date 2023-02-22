@@ -8,7 +8,7 @@ author:
 image:
   url: /findajourney/images/2022-slovenia/lake-bled-island-church.jpg
   alt: Lake Bled island with a church
-category: 
+category:
   name: Slovenia 2022
   slug: slovenia-2022
 slug: lake-bled
@@ -24,12 +24,16 @@ We strolled along the lake and stopped at Staza Bled, where we took a chairlift 
 
 ## Tasting traditional Slovenian desserts
 
-We also stopped at Café Belvedere to try some typical Slovenian desserts, including the famous "bled cream cake" and "Prekmurska Gibanica". The "Bled cream cake" is a traditional cream cake from the Bled area that is made with layers of puff pastry and vanilla custard cream. The "Prekmurska Gibanica" is a traditional pastry from the Prekmurje region, that is made with cottage cheese, poppy seeds, and apple filling. It was a great experience, as we had a great view of the lake from our table.
+We also stopped at Café Belvedere to try some typical Slovenian desserts, including the famous "bled cream cake" and "Prekmurska Gibanica". The "Bled cream cake" is a traditional cream cake from the Bled area that is made with layers of puff pastry and vanilla custard cream.
+
+The "Prekmurska Gibanica" is a traditional pastry from the Prekmurje region, that is made with cottage cheese, poppy seeds, and apple filling. It was a great experience, as we had a great view of the lake from our table.
 ![Slovenian desserts](/findajourney/images/2022-slovenia/slovenian-desserts.jpg)
 
 ## A bird's-eye-view of Lake Bled and sunset at Mala Ojstrica viewpoint
 
-Next, we went to the viewpoint Mala Ojstrica, where we were rewarded with one of the best views of the lake. The sun had already disappeared, but the view was still breathtaking. From this viewpoint, you could see the lake, the island, the castle, and the surrounding mountains all in one glance. It was a perfect spot to take some beautiful photos and enjoy the peacefulness of the lake.
+Next, we went to the viewpoint Mala Ojstrica, where we were rewarded with one of the best views of the lake. The sun had already disappeared, but the view was still breathtaking.
+
+From this viewpoint, you could see the lake, the island, the castle, and the surrounding mountains all in one glance. It was a perfect spot to take some beautiful photos and enjoy the peacefulness of the lake.
 ![Lake Bled viewpoint](/findajourney/images/2022-slovenia/lake-bled-viewpoint.jpg)
 
 ## A comfortable stay at Villa Mint & Lavender
@@ -54,7 +58,9 @@ Our first stop was at Slap Savica, which is a waterfall of 78meters located near
 However, there are some nice hiking trails that start from there. We decided to take a hike up to Dom na Komni and Koča pod Bogatinom in the Seven Lakes Valley. The valley is known for its seven beautiful alpine lakes, that are situated in the heart of the Julian Alps.
 ![Seven Lakes Valley view](/findajourney/images/2022-slovenia/seven-lakes-valley-view.jpg)
 
-The hike was challenging for us as we climbed 1500m height meters and we didn't have a lot of experience hiking. The trail was steep, rocky and it's not well marked. We passed beautiful alpine landscapes, dense forest, and as we climbed higher, we were rewarded with beautiful panoramic views of the valley and the surrounding mountain ranges. The trail also offered us really nice views of Lake Bohinj from above. We had a well-desirved lunch in the mountain hut Koča pod Bogatinom.
+The hike was challenging for us as we climbed 1500m height meters and we didn't have a lot of experience hiking. The trail was steep, rocky and it's not well marked. We passed beautiful alpine landscapes, dense forest, and as we climbed higher, we were rewarded with beautiful panoramic views of the valley and the surrounding mountain ranges.
+
+The trail also offered us really nice views of Lake Bohinj from above. We had a well-desirved lunch in the mountain hut Koča pod Bogatinom.
 ![Seven Lakes Valley hike](/findajourney/images/2022-slovenia/seven-lakes-valley-hike.jpg)
 
 ## Swimming to the island of Lake Bled
@@ -66,19 +72,31 @@ Swimming to the island and back was a great way to end the day and we felt a sen
 
 ## Discovering Slap Pericnik waterfall
 
-The next day, we woke up early to explore one of the most beautiful waterfalls in Slovenia, Slap Pericnik. The waterfall is located near the village of Mojstrana and is known for its unique feature of being able to walk behind the waterfall. The trail to the waterfall is easy to follow and takes you through a beautiful forest. The trail itself is not too long, and it takes around 20 minutes to reach the waterfall. As we got closer to the waterfall, we could hear the sound of the water cascading down the rocks.
+The next day, we woke up early to explore one of the most beautiful waterfalls in Slovenia, Slap Pericnik. The waterfall is located near the village of Mojstrana and is known for its unique feature of being able to walk behind the waterfall.
+
+The trail to the waterfall is easy to follow and takes you through a beautiful forest. The trail itself is not too long, and it takes around 20 minutes to reach the waterfall. As we got closer to the waterfall, we could hear the sound of the water cascading down the rocks.
 ![Behind Slap Pericnik waterfall](/findajourney/images/2022-slovenia/slap-pericnik.jpg)
 
-Once we reached the waterfall, we were amazed by its beauty. The waterfall falls down in two steps: the upper fall is 16 meters high and the lower fall 52 meters, this one is the most spectacular and you can admire it from different point of views. It was a unique and special experience to be able to walk behind it, the water curtain of Slap Peričnik ceated the finishing touch on the tremendous views on the valley. The cool mist created by the waterfall was also a welcome relief on a hot summer day.
+Once we reached the waterfall, we were amazed by its beauty. The waterfall falls down in two steps: the upper fall is 16 meters high and the lower fall 52 meters, this one is the most spectacular and you can admire it from different point of views.
+
+It was a unique and special experience to be able to walk behind it, the water curtain of Slap Peričnik ceated the finishing touch on the tremendous views on the valley. The cool mist created by the waterfall was also a welcome relief on a hot summer day.
 ![In front of Slap Pericnik waterfall](/findajourney/images/2022-slovenia/slap-pericnik-in-front.jpg)
 
 ## The beauty of Vintgar Gorge
 
-In the afternoon we visited Vintgar Gorge. This is a spectacular gorge that is located near the town of Bled. The gorge is carved by the Radovna River and is around 1.6 kilometers long. The trail takes you along the river, and you can see the beautiful waterfalls and rapids along the way. The highlight of the trail is the 16-meter high Sum waterfall, which is a stunning sight. The trail itself is easy to walk and takes around 1.5 hours to complete.
+In the afternoon we visited Vintgar Gorge. This is a spectacular gorge that is located near the town of Bled. The gorge is carved by the Radovna River and is around 1.6 kilometers long. The trail takes you along the river, and you can see the beautiful waterfalls and rapids along the way.
+
+The highlight of the trail is the 16-meter high Sum waterfall, which is a stunning sight. The trail itself is easy to walk and takes around 1.5 hours to complete.
 
 The trail is well maintained and has wooden walkways and bridges that allow you to get a close-up view of the gorge. However, it can be quite touristic, especially during peak season, so it's best to go early in the morning or late in the afternoon to avoid the crowds. Despite the crowds, we found the experience of walking through the gorge to be beautiful and we recommend visiting it.
 ![Vintgar Gorge](/findajourney/images/2022-slovenia/vintgar-gorge.jpg)
 
 ## Concluding thoughts on Lake Bled and its surroundings
 
-In conclusion, the trip to Lake Bled and Lake Bohinj in Slovenia was a truly memorable experience filled with breathtaking natural beauty, unique cultural experiences and outdoor adventures. From walking around the stunning Lake Bled, to trying the famous Slovenian desserts, taking a scenic chairlift and tobogganing ride, and visiting the picturesque viewpoint of Mala Ojstrica, the trip was filled with a variety of exciting activities. The peaceful and tranquil atmosphere of Lake Bohinj, the challenging hike in the Seven Lakes Valley, the stunning Slap Savica waterfall and the unique experience of walking behind Slap Pericnik waterfall, all added to the unforgettable memories of this trip. The trip to Slovenia is a must-visit destination for all nature and adventure lovers, and it is sure to leave a lasting impression.
+In conclusion, the trip to Lake Bled and Lake Bohinj in Slovenia was a truly memorable experience filled with breathtaking natural beauty, unique cultural experiences and outdoor adventures.
+
+From walking around the stunning Lake Bled, to trying the famous Slovenian desserts, taking a scenic chairlift and tobogganing ride, and visiting the picturesque viewpoint of Mala Ojstrica, the trip was filled with a variety of exciting activities.
+
+The peaceful and tranquil atmosphere of Lake Bohinj, the challenging hike in the Seven Lakes Valley, the stunning Slap Savica waterfall and the unique experience of walking behind Slap Pericnik waterfall, all added to the unforgettable memories of this trip.
+
+The trip to Slovenia is a must-visit destination for all nature and adventure lovers, and it is sure to leave a lasting impression.
