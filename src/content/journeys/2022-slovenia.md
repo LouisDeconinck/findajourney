@@ -17,6 +17,8 @@ slug: slovenia-2022
 Did you know Slovenia is the only country in the world with the word
 "love" in its name?
 
+![Slovenia road trip map](/findajourney/images/2022-slovenia/slovenia-road-trip.jpg)
+
 Slovenia, a small country located in Central Europe, is often
 overlooked as a travel destination, but it's a hidden gem that's
 well worth visiting. Known for its stunning natural landscapes, rich
@@ -24,7 +26,9 @@ history, and friendly people, Slovenia is the perfect destination
 for travelers looking for an off-the-beaten-path experience. With
 its diverse geography, Slovenia offers everything from snow-capped
 mountains to crystal-clear lakes, rolling hills, and verdant
-valleys. Slovenia is the second most forested country in Europe,
+valleys. 
+
+Slovenia is the second most forested country in Europe,
 with more than half of its territory covered in forests. Culturally,
 Slovenia is a mix of Slavic, Germanic and Mediterranean influences
 which can be seen in its architecture, food and customs. The country

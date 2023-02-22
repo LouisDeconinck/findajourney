@@ -1,6 +1,6 @@
 ---
 title: "48 Hours in Ljubljana: Must-See Attractions and Local Gems"
-pubDate: 2023-02-14
+pubDate: 2023-02-17
 description: Ljubljana, the capital of Slovenia, is a charming and picturesque city that is known for its rich history, vibrant culture, and stunning architecture.
 author: 
     name: Maryse

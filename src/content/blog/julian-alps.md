@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Slovenian Julian Alps: Zelenci, Lake Jasna, Vrsic Pass"
-pubDate: 2023-02-16
+pubDate: 2023-02-19
 description: Discover the natural beauty of the Slovenian Julian Alps. From stunning lakes and challenging mountain passes to thrilling adventures on the Soca River.
 author:
   name: Maryse

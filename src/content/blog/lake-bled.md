@@ -1,6 +1,6 @@
 ---
 title: "Discover the Beauty and Adventure of Lake Bled in Slovenia"
-pubDate: 2023-02-15
+pubDate: 2023-02-18
 description: Experience the breathtaking beauty and unique cultural experiences of Lake Bled and its surroundings in Slovenia.
 author:
   name: Maryse
