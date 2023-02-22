@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import PostCard from "../components/PostCard.astro";
 
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
@@ -18,6 +19,15 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
   year: "numeric",
   month: "long",
   day: "numeric",
+});
+
+const allPosts = await getCollection("blog", ({ data, slug }) => {
+  return data.category.name === entry.data.category.name && slug !== entry.slug;
+});
+allPosts.sort((a, b) => {
+  const pubDateA = new Date(a.data.pubDate);
+  const pubDateB: Date = new Date(b.data.pubDate);
+  return pubDateB.getTime() - pubDateA.getTime();
 });
 ---
 
@@ -70,5 +80,27 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
         >
       </p>
     </article>
+    <div class="relative max-w-7xl mx-auto">
+      <div
+        class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
+      >
+        {
+          allPosts.map((post) => (
+            <PostCard
+              title={post.data.title}
+              description={post.data.description}
+              author={post.data.author.name}
+              authorImg={post.data.author.image}
+              date={post.data.pubDate}
+              url={post.slug}
+              category={post.data.category.name}
+              categorySlug={post.data.category.slug}
+              imageUrl={post.data.image.url}
+              imageAlt={post.data.image.alt}
+            />
+          ))
+        }
+      </div>
+    </div>
   </body>
 </html>

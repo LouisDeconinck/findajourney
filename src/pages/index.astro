@@ -3,6 +3,11 @@ import PageLayout from "../layouts/PageLayout.astro";
 import PostCard from "../components/PostCard.astro";
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("blog");
+allPosts.sort((a, b) => {
+  const pubDateA = new Date(a.data.pubDate);
+  const pubDateB: Date = new Date(b.data.pubDate);
+  return pubDateB.getTime() - pubDateA.getTime();
+});
 const firstThreeEntries = allPosts.slice(0, 3);
 const pageTitle = "Find your next journey!";
 const pageDescription = "Your heart is your guide ❤️";

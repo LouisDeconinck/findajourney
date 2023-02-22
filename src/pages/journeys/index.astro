@@ -3,6 +3,11 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import JourneyCard from "../../components/JourneyCard.astro";
 import { getCollection } from 'astro:content';
 const allPosts = await getCollection('journeys');
+allPosts.sort((a, b) => {
+  const pubDateA = new Date(a.data.pubDate);
+  const pubDateB: Date = new Date(b.data.pubDate);
+  return pubDateB.getTime() - pubDateA.getTime();
+});
 const pageTitle = "Journeys";
 const pageDescription = "Find your next journey!";
 ---
