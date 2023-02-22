@@ -38,7 +38,7 @@ allPosts.sort((a, b) => {
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>"
     />
-    <link href={`https://site.com/${entry.data.slug}`} rel="canonical" />
+    <link href={`https://findajourenytravel.com/${entry.data.slug}`} rel="canonical" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={entry.data.description} />
@@ -66,7 +66,7 @@ allPosts.sort((a, b) => {
       <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
       <p class="font-medium py-5">
         Read more stories of this trip:<br/><a
-          href={`/findajourney/journeys/${entry.data.category.slug}`}
+          href={`/journeys/${entry.data.category.slug}`}
           class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
           >{entry.data.category.name}</a
         >
@@ -74,7 +74,7 @@ allPosts.sort((a, b) => {
       <Content />
       <p class="font-medium py-5">
         Read more stories of this trip:<br/><a
-          href={`/findajourney/journeys/${entry.data.category.slug}`}
+          href={`/journeys/${entry.data.category.slug}`}
           class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
           >{entry.data.category.name}</a
         >

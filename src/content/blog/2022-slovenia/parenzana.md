@@ -4,9 +4,9 @@ pubDate: 2023-02-21
 description: Discover the beauty of Slovenia's Adriatic Coast by bike. Ride the Parenzana trail from Portoroz to Koper and explore the breathtaking Škocjan Caves.
 author:
   name: Maryse
-  image: /findajourney/images/maryse-lejoly.jpg
+  image: /images/maryse-lejoly.jpg
 image:
-  url: /findajourney/images/2022-slovenia/parenzana.jpg
+  url: /images/2022-slovenia/parenzana.jpg
   alt: Parenzana
 category:
   name: Slovenia 2022
@@ -25,22 +25,22 @@ We'll also explore the Škocjan Caves, a UNESCO World Heritage Site, and one of 
 Today was dedicated to discovering the beauty of the country's Adriatic coast. After a good night of sleep at The Blue House - Guesthouse, we started by renting bikes from the Aerodrom of Portoroz, which is just a 15-minute walk from the Guesthouse where we stayed the night.
 
 Our goal for the day was to ride along the Parenzana route from Portoroz to Koper to discover the beautiful coastline.
-![Parenzana coastal views](/findajourney/images/2022-slovenia/parenzana-coastal-views.jpg)
+![Parenzana coastal views](/images/2022-slovenia/parenzana-coastal-views.jpg)
 
 The Parenzana was a narrow-gauge railway that operated in the early 20th century, connecting the towns along the Adriatic coast of Slovenia, Italy, and Croatia. Today, the Parenzana route has been transformed into a biking trail, providing a unique opportunity to explore the stunning scenery of the region.
-![Parenzana views](/findajourney/images/2022-slovenia/parenzana-views.jpg)
+![Parenzana views](/images/2022-slovenia/parenzana-views.jpg)
 
 ## Taking in the Stunning Views of the Adriatic Sea
 
 As we rode on the Parenzana, we were treated to breathtaking views of the Adriatic Sea and the rolling hills that surrounded it. The trail is well-maintained, making it a pleasant and easy ride.
 
 Along the way, we stopped at several points of interest, including the Church of St. George in Piran. This stunning church offers panoramic views of the coast from its rooftop and is definitely worth a visit.
-![Piran](/findajourney/images/2022-slovenia/piran.jpg)
+![Piran](/images/2022-slovenia/piran.jpg)
 
 ## Exploring the Charming Town of Koper
 
 Another stop we made was in Koper, our final destination, where we took a break for a late lunch. In this charming town we found fountains where we could drive through with ou bikes and we took advantage of them to refresh ourselves on a warm day. After lunch, we turned around to return to portoroz on the Parenzana.
-![Parenzana Koper](/findajourney/images/2022-slovenia/parenzana-koper.jpg)
+![Parenzana Koper](/images/2022-slovenia/parenzana-koper.jpg)
 
 Our day on the Parenzana was a highlight of our Slovenia adventure. It provided a unique way to explore the Adriatic coast. Whether you're a seasoned cyclist or just looking for a leisurely ride, the Parenzana is a must-visit destination in Slovenia.
 
@@ -49,7 +49,7 @@ Our day on the Parenzana was a highlight of our Slovenia adventure. It provided 
 Today was the final day of our amazing 10-day adventure in Slovenia. We woke up at the Blue House Guesthouse and said goodbye to our lovely hosts. As a farewell gesture, they gave us some delicious watermelon, which was the perfect treat to start our day.
 
 Our next stop was the Škocjan Caves, which was a must-visit destination on our final day. These caves are located in the Southwest part of Slovenia and are known for their stunning natural beauty and geological significance. They have been designated as a UNESCO World Heritage Site.
-![Skocjan Caves](/findajourney/images/2022-slovenia/skocjan-caves.jpg)
+![Skocjan Caves](/images/2022-slovenia/skocjan-caves.jpg)
 
 ## Guided Tours and Unique Experience for Visitors
 
