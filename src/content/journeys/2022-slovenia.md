@@ -32,5 +32,5 @@ Slovenia is the thirdmost forested country in Europe,
 with more than half of its territory (64%) covered in forests. Culturally,
 Slovenia is a mix of Slavic, Germanic and Mediterranean influences
 which can be seen in its architecture, food and customs. The country
-is also known for its wine, particularly its white wines, which are
-produced from the indigenous Rebula grape variety
+is also known for its wine, for example its white wines, which are
+produced from the indigenous Rebula grape variety.
