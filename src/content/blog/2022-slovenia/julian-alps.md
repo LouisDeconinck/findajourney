@@ -13,6 +13,7 @@ category:
   slug: slovenia-2022
 slug: julian-alps
 ---
+Join us on an unforgettable journey to the Slovenian Julian Alps! We started with the mesmerizing Zelenci Natural Reserve and the distinct emerald green Zelenci Lake. Then, we headed to the breathtaking Lake Jasna for some stand-up paddleboarding and awe-inspiring mountain views. We continued our adventure with an exhilarating drive through the Vrsic Mountain Pass, a hike to the source of the Soca River, and a via ferrata-style section for an extra level of excitement. After a day of rafting along the Soca River, we recharged at the Kamp Vodenca glamping site. Our journey was a thrilling experience that will stay with us forever.
 
 ## Visiting the Zelenci Natural Reserve
 We started our day by visiting the Zelenci Natural Reserve. The reserve is known for its beautiful and diverse landscape. The highlight of the reserve is the Zelenci Lake. Zelenci get their name from the color of the lake, zelen, which means green in Slovenian. The natural lake is fed by underground springs that boil trough a layer of lake chalk at the bottom, forming bubbles and leading to its distinct green color. at is home to a variety of aquatic plants and wildlife.  We took a leisurely walk around the lake, taking in the beautiful views of the surrounding mountains and the peaceful atmosphere of the reserve. The Zelenci natural reserve is a great place for nature lovers, bird watchers and hikers.
