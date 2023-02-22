@@ -2,13 +2,13 @@
 title: "Slovenia in 10 Days"
 pubDate: 2023-02-15
 description: Experience the breathtaking beauty and unique cultural experiences of Slovenia.
-author: 
-    name: Maryse
-    image: /findajourney/images/maryse-lejoly.jpg
+author:
+  name: Maryse
+  image: /findajourney/images/maryse-lejoly.jpg
 image:
   url: /findajourney/images/2022-slovenia/lake-bled-island-church.jpg
   alt: Lake Bled island with a church
-category: 
+category:
   name: Slovenia 2022
   slug: slovenia-2022
 slug: slovenia-2022
@@ -26,10 +26,10 @@ history, and friendly people, Slovenia is the perfect destination
 for travelers looking for an off-the-beaten-path experience. With
 its diverse geography, Slovenia offers everything from snow-capped
 mountains to crystal-clear lakes, rolling hills, and verdant
-valleys. 
+valleys.
 
-Slovenia is the second most forested country in Europe,
-with more than half of its territory covered in forests. Culturally,
+Slovenia is the thirdmost forested country in Europe,
+with more than half of its territory (64%) covered in forests. Culturally,
 Slovenia is a mix of Slavic, Germanic and Mediterranean influences
 which can be seen in its architecture, food and customs. The country
 is also known for its wine, particularly its white wines, which are
