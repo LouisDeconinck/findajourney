@@ -37,7 +37,7 @@ Our day on the Parenzana was a highlight of our Slovenia adventure. It provided 
 Today was the final day of our amazing 10-day adventure in Slovenia. We woke up at the Blue House Guesthouse and said goodbye to our lovely hosts. As a farewell gesture, they gave us some delicious watermelon, which was the perfect treat to start our day.
 
 Our next stop was the Škocjan Caves, which was a must-visit destination on our final day. These caves are located in the Southwest part of Slovenia and are known for their stunning natural beauty and geological significance. They have been designated as a UNESCO World Heritage Site.
-![Skocjan Caves](/findajourney/images/2022-slovenia/skockan-caves.jpg)
+![Skocjan Caves](/findajourney/images/2022-slovenia/skocjan-caves.jpg)
 
 ## Guided Tours and Unique Experience for Visitors
 The Škocjan Caves are a network of limestone caves and sinkholes that offer a breathtaking and unique experience for visitors. The cave system is made up of several large halls, including the Martel Chamber, which is considered one of the largest underground chambers in the world. There is even a crystal-clear river which flows through the cave system! Visitors can explore the caves by taking a guided tour and admire the impressive stalactites and stalagmites, as well as the river.
