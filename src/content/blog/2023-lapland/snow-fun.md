@@ -23,3 +23,4 @@ In the afternoon, we headed outside to play in the snow and make snow angels. We
 
 ## Mpemba Effect
 One of the highlights of the day was trying the Mpemba effect in the cold weather. The Mpemba effect is a phenomenon where hot water freezes faster than cold water, and we were able to see it in action at -17 degrees Celsius! Really nice to be able to try it out.
+<video src="images/2023-lapland/mbempa-effect.mp4" controls autoplay loop muted></video>

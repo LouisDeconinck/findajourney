@@ -1,5 +1,5 @@
 ---
-title: "Cross-country skiing in Rovaniemi"
+title: "Cross-Country Skiing in Rovaniemi"
 pubDate: 2024-06-04
 description: Explore the snowy scenery of Rovaniemi with us as we share our experience of cross-country skiing in Lapland's winter paradise.
 author:
