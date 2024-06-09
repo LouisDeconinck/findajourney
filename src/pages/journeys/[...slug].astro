@@ -3,6 +3,7 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import PostCard from "../../components/PostCard.astro";
 
 import { getCollection } from "astro:content";
+
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const blogEntries = await getCollection("journeys");
@@ -14,9 +15,10 @@ export async function getStaticPaths() {
 // 2. When it's time to render, you can get the entry directly from the prop
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const { slug } = Astro.params;
 
 const allPosts = await getCollection("blog", ({ data }) => {
-  return data.category.name === "Slovenia 2022";
+  return data.category.slug === slug;
 });
 allPosts.sort((a, b) => {
   const pubDateA = new Date(a.data.pubDate);
