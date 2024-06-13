@@ -18,7 +18,7 @@ const blogCollection = defineCollection({
         category: z.object({
             name: z.string(),
             slug: z.string(),
-            episode: z.number().optional(),
+            episode: z.number().optional().nullable(),
         }),
     }),
 });

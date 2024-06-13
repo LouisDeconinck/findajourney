@@ -17,14 +17,24 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 const { slug } = Astro.params;
 
-const allPosts = await getCollection("blog", ({ data }) => {
-  return data.category.slug === slug;
+const allJourneyPosts = await getCollection("blog", ({ data }) => {
+  return data.category.slug === slug && data.category.episode !== undefined && data.category.episode !== null;
 });
-allPosts.sort((a, b) => {
-  if (a.data.category.episode === undefined) return 1;
-  if (b.data.category.episode === undefined) return -1;
-  return a.data.category.episode - b.data.category.episode;
+allJourneyPosts.sort((a, b) => {
+    if (a.data.category.episode === null || a.data.category.episode === undefined) return 1;
+    if (b.data.category.episode === null || b.data.category.episode === undefined) return -1;
+    return a.data.category.episode - b.data.category.episode;
 });
+
+const allInspirationPosts = await getCollection("blog", ({ data }) => {
+  return data.category.slug === slug && (data.category.episode === undefined || data.category.episode === null);
+});
+allInspirationPosts.sort((a, b) => {
+  const pubDateA = new Date(a.data.pubDate);
+  const pubDateB: Date = new Date(b.data.pubDate);
+  return pubDateB.getTime() - pubDateA.getTime();
+});
+
 const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
   year: "numeric",
   month: "long",
@@ -53,14 +63,38 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
     <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
     <Content />
   </article>
-  <h1 class="text-center text-4xl font-bold">
+  <h1 class="text-center text-4xl font-bold mt-6">
     Our Journey
+  </h1>
+  <div
+    class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-24"
+  >
+    {
+      allJourneyPosts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          author={post.data.author.name}
+          authorImg={post.data.author.image}
+          date={post.data.pubDate}
+          url={post.slug}
+          category={post.data.category.name}
+          categorySlug={post.data.category.slug}
+          episode={post.data.category.episode}
+          imageUrl={post.data.image.url}
+          imageAlt={post.data.image.alt}
+        />
+      ))
+    }
+  </div>
+  <h1 class="text-center text-4xl font-bold">
+    Inspiration
   </h1>
   <div
     class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
   >
     {
-      allPosts.map((post) => (
+      allInspirationPosts.map((post) => (
         <PostCard
           title={post.data.title}
           description={post.data.description}

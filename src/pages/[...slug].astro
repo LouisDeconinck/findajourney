@@ -22,11 +22,11 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
 });
 
 const allPosts = await getCollection("blog", ({ data, slug }) => {
-  return data.category.name === entry.data.category.name && slug !== entry.slug;
+  return data.category.slug === entry.data.category.slug && slug !== entry.slug && data.category.episode !== null && data.category.episode !== undefined;
 });
 allPosts.sort((a, b) => {
-  if (a.data.category.episode === undefined) return 1;
-  if (b.data.category.episode === undefined) return -1;
+  if (a.data.category.episode === null || a.data.category.episode === undefined) return 1;
+  if (b.data.category.episode === null || b.data.category.episode === undefined) return -1;
   return a.data.category.episode - b.data.category.episode;
 });
 ---
@@ -72,17 +72,13 @@ allPosts.sort((a, b) => {
         >
       </p>
       <Content />
-      <p class="font-medium py-5">
-        Read more stories of this trip:<br/><a
-          href={`/journeys/${entry.data.category.slug}`}
-          class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
-          >{entry.data.category.name}</a
-        >
+      <p class="font-medium">
+        Read more stories of this trip:
       </p>
     </article>
     <div class="relative max-w-7xl mx-auto">
       <div
-        class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
+        class="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
       >
         {
           allPosts.map((post) => (
