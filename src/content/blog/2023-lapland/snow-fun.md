@@ -11,6 +11,7 @@ image:
 category:
   name: Lapland 2023
   slug: lapland-2023
+  episode: 2
 slug: snow-fun
 ---
 

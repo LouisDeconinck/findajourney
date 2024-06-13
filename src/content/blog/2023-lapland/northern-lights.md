@@ -11,6 +11,7 @@ image:
 category:
   name: Lapland 2023
   slug: lapland-2023
+  episode: 5
 slug: northern-lights
 ---
 We woke up early this morning, filled with excitement as we headed to the airport to pick up our rental car. With the keys to a sleek Mercedes Benz A-Class in hand, we were ready to explore Lapland beyond the city limits. Admittedly, it took us a moment to figure out how to start the car, but once we got it running, the drive was incredibly smooth and navigating the snowy roads was surprisingly easier than we had imagined.

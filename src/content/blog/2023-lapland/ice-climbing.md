@@ -11,6 +11,7 @@ image:
 category:
   name: Lapland 2023
   slug: lapland-2023
+  episode: 7
 slug: ice-climbing
 ---
 Our final day in Lapland began with an early wake-up call and a sense of eager anticipation. We set off on a drive to Pyhä, our destination: the majestic Pyhatunturi, renowned for its breathtaking landscapes and thrilling outdoor activities. Today, we were about to embark on an adventure that promised both excitement and a touch of challenge – ice climbing. We booked this activity through [Lapland Private](https://www.laplandprivate.com/).

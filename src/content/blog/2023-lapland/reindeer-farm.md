@@ -11,6 +11,7 @@ image:
 category:
   name: Lapland 2023
   slug: lapland-2023
+  episode: 3
 slug: reindeer-farm
 ---
 On the third day of our trip to Rovaniemi, we had an incredible opportunity to visit an authentic reindeer farm with [Johka](https://www.johka.fi/), a local business in Rovaniemi owned by Tuomo. Johka, which means river in Lappish, flows through the haert of the magic wilderness.

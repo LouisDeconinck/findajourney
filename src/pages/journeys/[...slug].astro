@@ -21,11 +21,10 @@ const allPosts = await getCollection("blog", ({ data }) => {
   return data.category.slug === slug;
 });
 allPosts.sort((a, b) => {
-  const pubDateA = new Date(a.data.pubDate);
-  const pubDateB: Date = new Date(b.data.pubDate);
-  return pubDateB.getTime() - pubDateA.getTime();
+  if (a.data.category.episode === undefined) return 1;
+  if (b.data.category.episode === undefined) return -1;
+  return a.data.category.episode - b.data.category.episode;
 });
-
 const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
   year: "numeric",
   month: "long",
@@ -54,6 +53,9 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
     <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
     <Content />
   </article>
+  <h1 class="text-center text-4xl font-bold">
+    Our Journey
+  </h1>
   <div
     class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
   >
@@ -68,6 +70,7 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
           url={post.slug}
           category={post.data.category.name}
           categorySlug={post.data.category.slug}
+          episode={post.data.category.episode}
           imageUrl={post.data.image.url}
           imageAlt={post.data.image.alt}
         />

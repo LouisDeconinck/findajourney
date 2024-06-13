@@ -11,6 +11,7 @@ image:
 category:
   name: Lapland 2023
   slug: lapland-2023
+  episode: 4
 slug: cross-country-skiing
 ---
 We woke up on day 4 of our Lapland trip excited for a new adventure. We had heard about the possibility of renting cross-country skis at Santa Sport and decided to give it a try. At first, we were a bit hesitant because we had never done it before and didn't want to get lost or end up in a difficult situation. However, after considering the cost of a guided group activity and the potential for a more peaceful and quiet experience, we decided to rent the skis and head out on our own.

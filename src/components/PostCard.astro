@@ -8,6 +8,7 @@ const {
   url,
   category,
   categorySlug,
+  episode,
   imageUrl,
   imageAlt,
 } = Astro.props;
@@ -19,14 +20,18 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
 });
 ---
 
-<div
-  class="flex flex-col rounded-lg shadow-lg overflow-hidden border-transparant border-2 hover:border-teal-800"
->
+<div class="flex flex-col rounded-lg shadow-lg overflow-hidden border-transparent border-2 hover:border-teal-800 relative">
+  {episode && 
+    <div class="absolute top-7 left-7 transform -translate-x-1/2 -translate-y-1/2">
+      <div class="flex items-center justify-center h-10 w-10 bg-teal-600 text-white text-xl font-bold rounded-tl-lg rounded-br-3xl pr-1 pb-1">
+        {episode}
+      </div>
+    </div>
+  }
   <div class="flex-shrink-0">
     <a href={`/${url}`}>
       <img
-        class="h-64
-         w-full object-cover"
+        class="h-64 w-full object-cover"
         src={`${imageUrl}`}
         alt={`${imageAlt}`}
       />

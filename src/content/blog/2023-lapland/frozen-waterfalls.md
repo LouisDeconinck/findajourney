@@ -11,6 +11,7 @@ image:
 category:
   name: Lapland 2023
   slug: lapland-2023
+  episode: 6
 slug: frozen-waterfalls
 ---
 After a good night of sleep, we decided to treat ourselves to a delicious brunch and headed to [Café STAAR](https://www.facebook.com/p/Cafe-STAAR-100063579280213/). The waffles there were absolutely amazing. We indulged in a sweet salmon waffle and a cloudberry jam waffle, both bursting with flavor. The cloudberries in the jam were handpicked by the owner, which added a special touch to the meal. Cloudberries are a Finnish specialty, and it was a delight to try them in such a unique way.

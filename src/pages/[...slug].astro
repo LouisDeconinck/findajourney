@@ -25,9 +25,9 @@ const allPosts = await getCollection("blog", ({ data, slug }) => {
   return data.category.name === entry.data.category.name && slug !== entry.slug;
 });
 allPosts.sort((a, b) => {
-  const pubDateA = new Date(a.data.pubDate);
-  const pubDateB: Date = new Date(b.data.pubDate);
-  return pubDateB.getTime() - pubDateA.getTime();
+  if (a.data.category.episode === undefined) return 1;
+  if (b.data.category.episode === undefined) return -1;
+  return a.data.category.episode - b.data.category.episode;
 });
 ---
 
@@ -95,6 +95,7 @@ allPosts.sort((a, b) => {
               url={post.slug}
               category={post.data.category.name}
               categorySlug={post.data.category.slug}
+              episode={post.data.category.episode}
               imageUrl={post.data.image.url}
               imageAlt={post.data.image.alt}
             />

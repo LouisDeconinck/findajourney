@@ -11,6 +11,7 @@ image:
 category:
   name: Slovenia 2022
   slug: slovenia-2022
+  episode: 3
 slug: julian-alps
 ---
 
