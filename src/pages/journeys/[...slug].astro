@@ -1,6 +1,7 @@
 ---
 import PageLayout from "../../layouts/PageLayout.astro";
 import PostCard from "../../components/PostCard.astro";
+import SmallCard from "../../components/SmallCard.astro";
 
 import { getCollection } from "astro:content";
 
@@ -95,18 +96,11 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
   >
     {
       allInspirationPosts.map((post) => (
-        <PostCard
+        <SmallCard
           title={post.data.title}
           description={post.data.description}
-          author={post.data.author.name}
-          authorImg={post.data.author.image}
-          date={post.data.pubDate}
-          url={post.slug}
           category={post.data.category.name}
           categorySlug={post.data.category.slug}
-          episode={post.data.category.episode}
-          imageUrl={post.data.image.url}
-          imageAlt={post.data.image.alt}
         />
       ))
     }
