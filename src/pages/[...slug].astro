@@ -44,6 +44,15 @@ allPosts.sort((a, b) => {
     <meta name="description" content={entry.data.description} />
     <title>{entry.data.title}</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RR6ZBL1PNP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RR6ZBL1PNP');
+  </script>
   <body>
     <Header />
     <article
@@ -64,13 +73,6 @@ allPosts.sort((a, b) => {
         {entry.data.title}
       </h1>
       <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
-      <p class="font-medium py-5">
-        Read more stories of this trip:<br/><a
-          href={`/journeys/${entry.data.category.slug}`}
-          class="bg-teal-800 p-2 rounded-md no-underline text-white hover:text-teal-50"
-          >{entry.data.category.name}</a
-        >
-      </p>
       <Content />
       <p class="font-medium">
         Read more stories of this trip:
