@@ -48,7 +48,7 @@ The pond's reinforced banks and piers offer plenty of space for fishing enthusia
 The large grassy area makes it an ideal place for children to play, and you can find some outdoor fitness equipment.
 ![Gebroeders van Raemdonck](/images/belgium/gebroedersvanraemdonckpark_4.jpg)
 
-## 3. Koniging Astridpark
+## 3. Koningin Astridpark
 Koningin Astridpark is a lovely old park on the edge of the city near Heule that many people enjoy.
 ![Koniging Astridpark](/images/belgium/astridpark_1.jpg)
 
