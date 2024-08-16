@@ -19,7 +19,7 @@ Kortrijk is known for its rich history, but did you know you can also explore th
 ![Kortrijk water](/images/belgium/kortrijk_water_02.jpg)
 
 Our journey began at the iconic Broeltorens, a beautiful spot to start your trip. 
-![Kortrijk water](/images/belgium/kortrijk_water_05.jpg)
+![Kortrijk water](/images/belgium/kortrijk_water_12.jpg)
 
 De Keper started with just two boats named "Manten" and "Kalle", after the bell ringers of Kortrijk’s Belfry Tower. 
 ![Kortrijk water](/images/belgium/kortrijk_water_08.jpg)
