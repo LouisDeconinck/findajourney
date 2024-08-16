@@ -1,5 +1,5 @@
 ---
-title: "Kortrijk From The Water"
+title: "Kortrijk Unseen: Discover the City's Charm from the Water"
 pubDate: 2024-08-16
 description: Discover Kortrijk from a new perspective with De Keper's boat rentals, offering flexible, self-guided tours that showcase the city's beauty and history from the water.
 author:
