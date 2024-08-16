@@ -2,6 +2,7 @@
 import PageLayout from "../../layouts/PageLayout.astro";
 import PostCard from "../../components/PostCard.astro";
 import SmallCard from "../../components/SmallCard.astro";
+import AuthorDate from "../../components/AuthorDate.astro";
 
 import { getCollection } from "astro:content";
 
@@ -19,16 +20,25 @@ const { Content } = await entry.render();
 const { slug } = Astro.params;
 
 const allJourneyPosts = await getCollection("blog", ({ data }) => {
-  return data.category.slug === slug && data.category.episode !== undefined && data.category.episode !== null;
+  return (
+    data.category.slug === slug &&
+    data.category.episode !== undefined &&
+    data.category.episode !== null
+  );
 });
 allJourneyPosts.sort((a, b) => {
-    if (a.data.category.episode === null || a.data.category.episode === undefined) return 1;
-    if (b.data.category.episode === null || b.data.category.episode === undefined) return -1;
-    return a.data.category.episode - b.data.category.episode;
+  if (a.data.category.episode === null || a.data.category.episode === undefined)
+    return 1;
+  if (b.data.category.episode === null || b.data.category.episode === undefined)
+    return -1;
+  return a.data.category.episode - b.data.category.episode;
 });
 
 const allInspirationPosts = await getCollection("blog", ({ data }) => {
-  return data.category.slug === slug && (data.category.episode === undefined || data.category.episode === null);
+  return (
+    data.category.slug === slug &&
+    (data.category.episode === undefined || data.category.episode === null)
+  );
 });
 allInspirationPosts.sort((a, b) => {
   const pubDateA = new Date(a.data.pubDate);
@@ -45,28 +55,16 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
 
 <PageLayout>
   <article
-    class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-slate prose-lg lg:prose-xl prose-img:rounded-md prose-img:shadow-lg"
+    class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-slate prose-lg lg:prose-xl prose-img:rounded-md prose-img:shadow-lg"
   >
-    <p class="text-center !my-0">
-      Written by <img
-        class="inline h-10 w-10 !rounded-full"
-        src={`${entry.data.author.image}`}
-        alt={`${entry.data.author.name}`}
-      />
-      <span class="font-medium text-teal-800">{entry.data.author.name}</span> on
-      <span class="font-medium text-teal-800"
-        ><time datetime={`${entry.data.pubDate}`}>{formattedDate}</time></span
-      >
-    </p>
+    <AuthorDate author={entry.data.author} date={entry.data.pubDate} />
     <h1 class="text-center">
       {entry.data.title}
     </h1>
     <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
     <Content />
   </article>
-  <h1 class="text-center text-4xl font-bold mt-6">
-    Our Journey
-  </h1>
+  <h1 class="text-center text-4xl font-bold mt-6">Our Journey</h1>
   <div
     class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-24"
   >
@@ -88,9 +86,7 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
       ))
     }
   </div>
-  <h1 class="text-center text-4xl font-bold">
-    Inspiration
-  </h1>
+  <h1 class="text-center text-4xl font-bold">Inspiration</h1>
   <div
     class="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none pb-48"
   >

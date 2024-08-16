@@ -2,10 +2,8 @@
 import { getCollection } from "astro:content";
 
 const allJourneys = await getCollection("journeys");
-console.log("All journeys:", allJourneys);
 
 const mapJourneys = allJourneys.map(journey => {
-  console.log("Processing journey:", journey.slug, journey.data);
   return {
     title: journey.data.title,
     slug: journey.slug,
@@ -15,19 +13,15 @@ const mapJourneys = allJourneys.map(journey => {
 }).filter(journey => {
   const isValid = journey.lat && journey.lng;
   if (!isValid) {
-    console.log("Filtered out journey:", journey.slug);
   }
   return isValid;
 });
-
-console.log("Filtered mapJourneys:", mapJourneys);
 ---
 
 <div id="map" class="w-full h-96 rounded-lg shadow-md mb-8"></div>
 
 <script define:vars={{ mapJourneys }}>
   function initMap() {
-    console.log("Initializing map with journeys:", mapJourneys);
     const map = L.map('map', {
       zoomControl: false,
       attributionControl: false
@@ -53,7 +47,6 @@ console.log("Filtered mapJourneys:", mapJourneys);
     });
 
     mapJourneys.forEach(journey => {
-      console.log("Adding marker for journey:", journey);
       if (journey.lat && journey.lng) {
         const marker = L.marker([journey.lat, journey.lng], {icon: customIcon}).addTo(map);
         

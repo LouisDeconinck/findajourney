@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import PostCard from "../components/PostCard.astro";
+import AuthorDate from "../components/AuthorDate.astro";
 
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
@@ -22,11 +23,18 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString("en-US", {
 });
 
 const allPosts = await getCollection("blog", ({ data, slug }) => {
-  return data.category.slug === entry.data.category.slug && slug !== entry.slug && data.category.episode !== null && data.category.episode !== undefined;
+  return (
+    data.category.slug === entry.data.category.slug &&
+    slug !== entry.slug &&
+    data.category.episode !== null &&
+    data.category.episode !== undefined
+  );
 });
 allPosts.sort((a, b) => {
-  if (a.data.category.episode === null || a.data.category.episode === undefined) return 1;
-  if (b.data.category.episode === null || b.data.category.episode === undefined) return -1;
+  if (a.data.category.episode === null || a.data.category.episode === undefined)
+    return 1;
+  if (b.data.category.episode === null || b.data.category.episode === undefined)
+    return -1;
   return a.data.category.episode - b.data.category.episode;
 });
 ---
@@ -38,45 +46,45 @@ allPosts.sort((a, b) => {
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>"
     />
-    <link href={`https://findajourneytravel.com/${entry.data.slug}`} rel="canonical" />
+    <link
+      href={`https://findajourneytravel.com/${entry.data.slug}`}
+      rel="canonical"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={entry.data.description} />
     <title>{entry.data.title}</title>
   </head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RR6ZBL1PNP"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RR6ZBL1PNP"
+  ></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    declare global {
+      interface Window {
+        dataLayer: any[];
+      }
+    }
 
-    gtag('config', 'G-RR6ZBL1PNP');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(...args: any[]) {
+      window.dataLayer.push(args);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-RR6ZBL1PNP");
   </script>
   <body>
     <Header />
     <article
       class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 prose prose-slate prose-lg lg:prose-xl prose-img:rounded-md prose-img:shadow-lg"
     >
-      <p class="text-center !my-0">
-        Written by <img
-          class="inline h-10 w-10 !rounded-full"
-          src={`${entry.data.author.image}`}
-          alt={`${entry.data.author.name}`}
-        />
-        <span class="font-medium text-teal-800">{entry.data.author.name}</span> on
-        <span class="font-medium text-teal-800"
-          ><time datetime={`${entry.data.pubDate}`}>{formattedDate}</time></span
-        >
-      </p>
+      <AuthorDate author={entry.data.author} date={entry.data.pubDate} />
       <h1 class="text-center">
         {entry.data.title}
       </h1>
       <img src={`${entry.data.image.url}`} alt={`${entry.data.image.alt}`} />
       <Content />
-      <p class="font-medium">
-        Read more stories of this trip:
-      </p>
+      <p class="font-medium">Read more stories of this trip:</p>
     </article>
     <div class="relative max-w-7xl mx-auto">
       <div
@@ -86,6 +94,7 @@ allPosts.sort((a, b) => {
           allPosts.map((post) => (
             <PostCard
               title={post.data.title}
+
               description={post.data.description}
               author={post.data.author.name}
               authorImg={post.data.author.image}

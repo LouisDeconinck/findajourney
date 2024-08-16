@@ -1,0 +1,25 @@
+---
+const { author, date } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<div class="flex flex-wrap items-center justify-center text-center mb-4 gap-x-2 gap-y-1">
+  <span>Written by</span>
+  <span class="inline-flex items-center">
+    <img
+      class="h-10 w-10 rounded-full mr-1 my-0"
+      src={author.image}
+      alt={author.name}
+    />
+    <span class="font-medium text-teal-800">{author.name}</span>
+  </span>
+  <span>on</span>
+  <time class="font-medium text-teal-800" datetime={date}>
+    {formattedDate}
+  </time>
+</div>
