@@ -1,0 +1,99 @@
+---
+import { getCollection } from "astro:content";
+
+const allJourneys = await getCollection("journeys");
+console.log("All journeys:", allJourneys);
+
+const mapJourneys = allJourneys.map(journey => {
+  console.log("Processing journey:", journey.slug, journey.data);
+  return {
+    title: journey.data.title,
+    slug: journey.slug,
+    lat: journey.data.location?.lat,
+    lng: journey.data.location?.lng,
+  };
+}).filter(journey => {
+  const isValid = journey.lat && journey.lng;
+  if (!isValid) {
+    console.log("Filtered out journey:", journey.slug);
+  }
+  return isValid;
+});
+
+console.log("Filtered mapJourneys:", mapJourneys);
+---
+
+<div id="map" class="w-full h-96 rounded-lg shadow-md mb-8"></div>
+
+<script define:vars={{ mapJourneys }}>
+  function initMap() {
+    console.log("Initializing map with journeys:", mapJourneys);
+    const map = L.map('map', {
+      zoomControl: false,
+      attributionControl: false
+    }).setView([20, 0], 2);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: null
+    }).addTo(map);
+
+    // Custom icon SVG
+    const customIconSvg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#115e59" width="48px" height="48px">
+        <path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+      </svg>
+    `;
+
+    // Create a custom icon
+    const customIcon = L.divIcon({
+      className: 'custom-icon',
+      html: customIconSvg,
+      iconSize: [48, 48],
+      iconAnchor: [24, 48],
+    });
+
+    mapJourneys.forEach(journey => {
+      console.log("Adding marker for journey:", journey);
+      if (journey.lat && journey.lng) {
+        const marker = L.marker([journey.lat, journey.lng], {icon: customIcon}).addTo(map);
+        
+        marker.on('click', () => {
+          window.location.href = `/journeys/${journey.slug}`;
+        });
+      } else {
+        console.warn("Invalid coordinates for journey:", journey);
+      }
+    });
+
+    // Fit the map to the bounds of all markers
+    if (mapJourneys.length > 0) {
+      const bounds = L.latLngBounds(mapJourneys.map(j => [j.lat, j.lng]));
+      map.fitBounds(bounds);
+    }
+
+    // Disable drag and zoom handlers
+    map.dragging.disable();
+    map.touchZoom.disable();
+    map.doubleClickZoom.disable();
+    map.scrollWheelZoom.disable();
+    map.boxZoom.disable();
+    map.keyboard.disable();
+    if (map.tap) map.tap.disable();
+  }
+
+  // Check if Leaflet is already loaded
+  if (typeof L !== 'undefined') {
+    console.log("Leaflet is already loaded, initializing map");
+    initMap();
+  } else {
+    console.log("Waiting for Leaflet to load");
+    window.addEventListener('leafletloaded', initMap);
+  }
+</script>
+
+<style>
+  .custom-icon {
+    background: none;
+    border: none;
+  }
+</style>

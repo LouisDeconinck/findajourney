@@ -12,6 +12,9 @@ category:
   name: Slovenia 2022
   slug: slovenia-2022
 slug: slovenia-2022
+location:
+  lat: 46.3636
+  lng: 14.0938
 ---
 
 Did you know Slovenia is the only country in the world with the word

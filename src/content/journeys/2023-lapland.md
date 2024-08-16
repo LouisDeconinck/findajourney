@@ -12,6 +12,9 @@ category:
   name: Lapland 2023
   slug: lapland-2023
 slug: lapland-2023
+location:
+  lat: 66.5039
+  lng: 25.7294
 ---
 
 Imagine waking up in the winter wonderland of Rovaniemi, surrounded by snow-covered trees and with a fresh blanket of snow on the ground. That's exactly what we experienced during our 7-day stay in this magical city. We rented a car for the last 3 days to explore a little out of the city as well. 

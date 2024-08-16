@@ -40,6 +40,10 @@ const journeyCollection = defineCollection({
             name: z.string(),
             slug: z.string(),
         }),
+        location: z.object({
+            lat: z.number(),
+            lng: z.number(),
+        }).optional(),
     }),
 });
 

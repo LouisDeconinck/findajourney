@@ -12,4 +12,7 @@ category:
   name: Belgium
   slug: belgium
 slug: belgium
+location:
+  lat: 50.8268
+  lng: 3.2544
 ---

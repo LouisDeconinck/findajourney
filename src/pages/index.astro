@@ -1,6 +1,7 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 import PostCard from "../components/PostCard.astro";
+import JourneyMap from "../components/JourneyMap.astro";
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("blog", ({ data  }) => {
   return data.category.episode !== null && data.category.episode !== undefined;
@@ -92,6 +93,10 @@ const pageDescription = "Your heart is your guide ❤️";
       </div>
     </div>
     <h2
+      class="text-3xl tracking-tight font-extrabold text-slate-800 sm:text-4xl pt-8 mb-4">
+    Our Journeys</h2>
+    <JourneyMap />
+    <h2
       class="text-3xl tracking-tight font-extrabold text-slate-800 sm:text-4xl pt-8"
     >
       Latest posts
@@ -118,3 +123,22 @@ const pageDescription = "Your heart is your guide ❤️";
     </div>
   </div>
 </PageLayout>
+
+<script>
+  function loadLeafletScript() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(link);
+
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    script.onload = () => {
+      const event = new Event('leafletloaded');
+      window.dispatchEvent(event);
+    };
+    document.head.appendChild(script);
+  }
+
+  window.addEventListener('load', loadLeafletScript);
+</script>
