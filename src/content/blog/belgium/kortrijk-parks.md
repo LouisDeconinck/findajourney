@@ -7,7 +7,7 @@ author:
   image: /images/maryse-lejoly.jpg
 image:
   url: /images/belgium/gebroedersvanraemdonckpark_3.jpg
-  alt: Parenzana
+  alt: Gebroeders van Raemdonckpark
 category:
   name: Belgium
   slug: belgium
