@@ -7,7 +7,7 @@ author:
   image: /images/maryse-lejoly.jpg
 image:
   url: /images/belgium/kortrijk_water_01.jpg
-  alt: Parenzana
+  alt: Kortrijk water
 category:
   name: Belgium
   slug: belgium
