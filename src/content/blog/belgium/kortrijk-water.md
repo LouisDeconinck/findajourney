@@ -1,7 +1,7 @@
 ---
 title: "Kortrijk Unseen: Discover the City's Charm from the Water"
 pubDate: 2024-08-16
-description: Discover Kortrijk from a new perspective with De Keper's boat rentals, offering flexible, self-guided tours that showcase the city's beauty and history from the water.
+description: Explore Kortrijk from exciting new perspectives with Tankkd Rafting's thrilling adventures and De Keper's relaxing boat rentals, offering unique ways to experience the city's beauty and history from the water.
 author:
   name: Maryse
   image: /images/maryse-lejoly.jpg
@@ -15,8 +15,33 @@ category:
 slug: kortrijk-water
 ---
 
-Kortrijk is known for its rich history, but did you know you can also explore this city from the water? We had the chance to take a boat trip with [De Keper](https://de-keper.be/), a local boat rental company that has been offering fantastic experiences for over seven years.
-![Kortrijk water](/images/belgium/kortrijk_water_02.jpg)
+Kortrijk is known for its rich history, but did you know you can also explore this city from the water? There are two exciting options to discover Kortrijk's aquatic charm: an fun-guaranteed adventure with Tankkd Rafting or a leisurely cruise with De Keper's boat rentals.
+
+## Tankkd Rafting: Fun in a Barrel on the Water
+![Kortrijk water](/images/belgium/kortrijk_water_13.jpg)
+
+For those seeking an unforgettable, fun-guaranteed experience, [Tankkd Rafting](https://tankkd-rafting.com/) offers an exciting way to explore Kortrijk's waterways. Founded by Kim & David, Tankkd Rafting aims to bring people closer to nature and each other through fun water activities.
+![Kortrijk water](/images/belgium/kortrijk_water_14.jpg)
+
+Their mission is to create lasting memories for families and groups of all ages. Whether you're a local or a tourist, Tankkd Rafting provides an opportunity to see Kortrijk from a unique perspective while enjoying the rush of navigating the city's waters in a barrel. It's called tanking, and it's a lot of fun!
+![Kortrijk water](/images/belgium/kortrijk_water_15.jpg)
+
+With Tankkd Rafting, you'll experience exciting rafting adventures suitable for all skill levels. It's a perfect opportunity to bond with family and friends in a dynamic environment. Moreover, you'll gain a new appreciation for Kortrijk's waterways and surrounding nature as you navigate through the city's aquatic landscape.
+![Kortrijk water](/images/belgium/kortrijk_water_16.jpg)
+
+You can rent a barrel for 2 up to 8 people. Most trips with Tankkd Rafting last about 2 hours, covering a distance of 1 km. Participants should wear clothes that can get wet. Tankkd Rafting operates from April to October, weather permitting. They also offer special packages for bachelor parties, team building events, and other group activities.
+![Kortrijk water](/images/belgium/kortrijk_water_17.jpg)
+
+Whether you're looking for an adrenaline rush or a unique way to see Kortrijk, Tankkd Rafting provides an unforgettable experience that combines adventure with the beauty of the city's waterways.
+![Kortrijk water](/images/belgium/kortrijk_water_18.jpg)
+
+We went paddling with two friends and made sure to bring some tasty snacks and drinks. Be carefull not too paddle too far, as you will have to return against the current which can be quite challenging. 
+![Kortrijk water](/images/belgium/kortrijk_water_19.jpg)
+
+
+## De Keper: A Relaxing Boat Trip
+
+For those wanting to venture out a bit further, we had the chance to take a boat trip with [De Keper](https://de-keper.be/), a local boat rental company that has been offering fantastic experiences for over seven years.
 
 Our journey began at the iconic Broeltorens, a beautiful spot to start your trip. 
 ![Kortrijk water](/images/belgium/kortrijk_water_12.jpg)
